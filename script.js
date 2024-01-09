@@ -150,3 +150,12 @@ const modBook = newBook.map((genre, i, modBook) => {
 });
 
 modBook;
+
+// reduce method
+const books = getBooks();
+
+const totalPages = books.reduce((prev, cur, ind, books) => {
+  return prev + cur.pages;
+}, 0);
+
+totalPages;
